@@ -3,4 +3,4 @@
 	url = https://github.com/jordan5034/AICompanion.git
 [submodule "src/games/CookieDestroy"]
 	path = src/games/CookieDestroy
-	url = https://github.com/miftino/Cookie-Destroy-.git
+	url = https://github.com/jordan5034/Cookie-Destroy-.git
