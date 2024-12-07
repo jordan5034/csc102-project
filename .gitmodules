@@ -1,0 +1,3 @@
+[submodule "src/games/AICompanion"]
+	path = src/games/AICompanion
+	url = https://github.com/jordan5034/AICompanion.git
