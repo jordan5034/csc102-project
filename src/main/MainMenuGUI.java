@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import games.AICompanion.src.AICompanionGameGUI;
+import games.CookieDestroy.src.Main;
 
 public class MainMenuGUI extends JFrame {
 
@@ -35,7 +36,7 @@ public class MainMenuGUI extends JFrame {
         // Games
 
         String Game1 = "AICompanion";
-        String Game2 = "Game 2";
+        String Game2 = "Cookie Destroy";
         String Game3 = "Game 3";
         String Game4 = "Game 4";
 
@@ -85,14 +86,16 @@ public class MainMenuGUI extends JFrame {
         int m = getInputTwoIntegers("Input number of columns (5-100):", 5, 100);
 
         if (n > 0 && m > 0) {
-            AICompanionGameGUI aiCompanionGameGUI = new AICompanionGameGUI(n, m);
+            games.AICompanion.src.AICompanionGameGUI aiCompanionGameGUI = new games.AICompanion.src.AICompanionGameGUI(n, m);
         } else {
             JOptionPane.showMessageDialog(this, "Invalid input. Game not started.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
     private void startGame2() {
-        JOptionPane.showMessageDialog(this, "Launching Game 2!", "Game Selected", JOptionPane.INFORMATION_MESSAGE);
+        games.CookieDestroy.src.Main main = new games.CookieDestroy.src.Main();
+
+        // JOptionPane.showMessageDialog(this, "Launching Game 2!", "Game Selected", JOptionPane.INFORMATION_MESSAGE);
     }
 
     private void startGame3() {
