@@ -78,18 +78,17 @@ public class MainMenuGUI extends JFrame {
 
     private void startGame1() {
 
-            AICompanionGameGUI aiCompanionGameGUI = new AICompanionGameGUI(5, 5);
 
         // User decides size of grid
 
-//        int n = getInputTwoIntegers("Input number of rows (5-100):", 5, 100);
-//        int m = getInputTwoIntegers("Input number of columns (5-100):", 5, 100);
-//
-//        if (n > 0 && m > 0) {
-//            AICompanionGameGUI aiCompanionGameGUI = new AICompanionGameGUI(n, m);
-//        } else {
-//            JOptionPane.showMessageDialog(this, "Invalid input. Game not started.", "Error", JOptionPane.ERROR_MESSAGE);
-//        }
+        int n = getInputTwoIntegers("Input number of rows (5-100):", 5, 100);
+        int m = getInputTwoIntegers("Input number of columns (5-100):", 5, 100);
+
+        if (n > 0 && m > 0) {
+            AICompanionGameGUI aiCompanionGameGUI = new AICompanionGameGUI(n, m);
+        } else {
+            JOptionPane.showMessageDialog(this, "Invalid input. Game not started.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     private void startGame2() {
