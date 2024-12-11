@@ -5,9 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import games.AICompanion.src.AICompanionGameGUI;
-import games.CookieDestroy.src.Main;
-
 public class MainMenuGUI extends JFrame {
 
     public MainMenuGUI() {
@@ -35,7 +32,7 @@ public class MainMenuGUI extends JFrame {
 
         // Games
 
-        String Game1 = "AICompanion";
+        String Game1 = "Maze";
         String Game2 = "Cookie Destroy";
         String Game3 = "Catch Game";
         String Game4 = "Fruit Catch";
