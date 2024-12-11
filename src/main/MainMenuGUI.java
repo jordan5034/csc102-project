@@ -37,8 +37,8 @@ public class MainMenuGUI extends JFrame {
 
         String Game1 = "AICompanion";
         String Game2 = "Cookie Destroy";
-        String Game3 = "Game 3";
-        String Game4 = "Game 4";
+        String Game3 = "Catch Game";
+        String Game4 = "Fruit Catch";
 
         // Add buttons with dynamic behavior
         buttonPanel.add(createGameButton(Game1, e -> startGame1()));
@@ -99,11 +99,13 @@ public class MainMenuGUI extends JFrame {
     }
 
     private void startGame3() {
-        JOptionPane.showMessageDialog(this, "Launching Game 3!", "Game Selected", JOptionPane.INFORMATION_MESSAGE);
+        games.JoseCatchGame.CatchGame main = new games.JoseCatchGame.CatchGame();
+        // JOptionPane.showMessageDialog(this, "Launching Game 3!", "Game Selected", JOptionPane.INFORMATION_MESSAGE);
     }
 
     private void startGame4() {
-        JOptionPane.showMessageDialog(this, "Launching Game 4!", "Game Selected", JOptionPane.INFORMATION_MESSAGE);
+        games.JavierFruitCatch.CatchGame main = new games.JavierFruitCatch.CatchGame();
+        //JOptionPane.showMessageDialog(this, "Launching Game 4!", "Game Selected", JOptionPane.INFORMATION_MESSAGE);
     }
 
     // Helper Methods
